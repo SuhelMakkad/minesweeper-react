@@ -5,7 +5,6 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/minesweeper-react/",
   resolve: {
     alias: {
       "@/hooks": path.resolve(__dirname, "./src/common/hooks"),
