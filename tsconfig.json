@@ -22,6 +22,7 @@
     "paths": {
       "@/hooks/*": ["./src/common/hooks/*"],
       "@/components/*": ["./src/common/components/*"],
+      "@/styles/*": ["./src/common/styles/*"],
       "@/images/*": ["./src/assets/images/*"],
       "@/assets/*": ["./src/assets/*"],
       "@/*": ["./src/*"]

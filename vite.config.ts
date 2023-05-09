@@ -8,8 +8,9 @@ export default defineConfig({
   base: "/minesweeper-react/",
   resolve: {
     alias: {
-      "@/components": path.resolve(__dirname, "./src/common/components"),
       "@/hooks": path.resolve(__dirname, "./src/common/hooks"),
+      "@/components": path.resolve(__dirname, "./src/common/components"),
+      "@/styles": path.resolve(__dirname, "./src/common/styles"),
       "@/images": path.resolve(__dirname, "./src/assets/images"),
       "@/assets": path.resolve(__dirname, "./src/assets"),
       "@": path.resolve(__dirname, "./src"),
