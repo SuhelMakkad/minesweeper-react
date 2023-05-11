@@ -51,7 +51,7 @@ export const getInitialState = (): Cell[][] => {
   // count adjacent numbers
   board.forEach((row, rowIndex) =>
     row.map((cell, colIndex) => {
-      if (cell.value === BOMB) return;
+      if (cell.value !== BOMB) return;
 
       DIRECTIONS.forEach((direction) => {
         const [offsetRow, offsetCol] = direction;
@@ -64,9 +64,9 @@ export const getInitialState = (): Cell[][] => {
           adjacentRowIndex >= 0 &&
           adjacentColIndex < SIZE &&
           adjacentRowIndex < SIZE &&
-          board[adjacentRowIndex][adjacentRowIndex].value === BOMB
+          board[adjacentRowIndex][adjacentColIndex].value !== BOMB
         ) {
-          cell.value += 1;
+          board[adjacentRowIndex][adjacentColIndex].value += 1;
         }
       });
     })
